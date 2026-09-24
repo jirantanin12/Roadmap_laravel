@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Form & Security - Laravel Roadmap</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Laravel Roadmap</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="step1.html">1. พื้นฐาน</a></li>
+            <li><a href="step2.html">2. MVC</a></li>
+            <li><a href="step3.html">3. Database</a></li>
+            <li><a href="step4.html">4. Form & Security</a></li>
+            <li><a href="step5.html">5. API</a></li>
+            <li><a href="step6.html">6. Advanced</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="detail-section">
+            <h2>4. การจัดการข้อมูลจากฟอร์มและความปลอดภัย</h2>
+            <p>การรับข้อมูลจากผู้ใช้งานคือจุดที่เสี่ยงที่สุด คุณต้องรู้วิธีการคัดกรองข้อมูลและป้องกันระบบจากการโจมตี</p>
+            <br>
+            <ul>
+                <li><strong>Request Handling:</strong> การรับค่าจากฟอร์ม HTML การดึงค่า Input แบบเจาะจง และการเก็บค่าเดิมไว้ในฟอร์มเมื่อเกิด Error (Old Input)</li>
+                <li><strong>Validation:</strong> การตั้งกฎเกณฑ์ข้อมูล เช่น <code>required</code>, <code>email</code>, <code>min:8</code> ผ่าน Form Request Classes และการนำข้อความ Error ไปโชว์หน้าเว็บ</li>
+                <li><strong>CSRF Protection:</strong> การทำความเข้าใจช่องโหว่ปลอมแปลงคำขอ และการใส่ <code>@csrf</code> ในทุกๆ ฟอร์มที่เป็นการ POST ข้อมูล</li>
+                <li><strong>Authentication:</strong> การติดตั้งระบบล็อกอิน สมัครสมาชิก และลืมรหัสผ่านแบบสำเร็จรูปด้วย <strong>Laravel Breeze</strong></li>
+                <li><strong>Authorization (เบื้องต้น):</strong> การตรวจสอบสิทธิ์ว่าผู้ใช้คนนี้มีสิทธิ์แก้ไขหรือลบข้อมูลนี้หรือไม่ ผ่านระบบ Gates หรือ Policies</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
